@@ -22,3 +22,13 @@ pandas>=1.5.3
 
 # Testing
 pytest>=7.0.0
+
+fastapi
+uvicorn
+python-dotenv
+openai
+langchain
+langchain-openai
+numpy
+thefuzz
+python-Levenshtein  # for better fuzzy matching performance
