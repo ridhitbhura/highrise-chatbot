@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Kill any existing processes
-pkill -f "uvicorn"
-pkill -f "next dev"
-
 # Wait a moment for processes to clean up
 sleep 2
 
