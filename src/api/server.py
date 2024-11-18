@@ -21,9 +21,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Get the absolute path to the data directory
+# Get the absolute path to the data file
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 FAQ_PATH = os.path.join(BASE_DIR, 'data', 'highrise_faq.json')
+
+print(f"Looking for FAQ file at: {FAQ_PATH}")
+print(f"Current directory contents: {os.listdir(BASE_DIR)}")
 
 # Initialize chatbot with absolute path
 chatbot = SimpleFAQChatbot(FAQ_PATH)
